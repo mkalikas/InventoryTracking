@@ -19,10 +19,6 @@ struct Equipment{
     // Will initialize this with enumerated data
 };
 
-enum _equipment{
-    // Will include various equiptment that is typically carried on trucks
-};
-
 struct weight : vehicleData{
     void grossWeight(float);
     void combinedWeight(float);
