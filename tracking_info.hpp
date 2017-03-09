@@ -15,11 +15,11 @@ struct vehicleData{
 
 };
 
-struct Equiptment{
+struct Equipment{
     // Will initialize this with enumerated data
 };
 
-enum _equiptment{
+enum _equipment{
     // Will include various equiptment that is typically carried on trucks
 };
 
