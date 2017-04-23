@@ -12,3 +12,9 @@ newvehicle::~newvehicle()
 {
     delete ui;
 }
+
+
+void newvehicle::on_okButton_clicked(QAbstractButton *button)
+{
+
+}

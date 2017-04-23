@@ -354,7 +354,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QDialogButtonBox" name="buttonBox">
+     <widget class="QDialogButtonBox" name="okButton">
       <property name="focusPolicy">
        <enum>Qt::ClickFocus</enum>
       </property>
@@ -367,14 +367,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QDialogButtonBox" name="buttonBox_2">
+     <widget class="QDialogButtonBox" name="saveButton">
       <property name="standardButtons">
        <set>QDialogButtonBox::Save</set>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QDialogButtonBox" name="buttonBox_3">
+     <widget class="QDialogButtonBox" name="cancelButton">
       <property name="standardButtons">
        <set>QDialogButtonBox::Cancel</set>
       </property>
@@ -386,7 +386,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>okButton</sender>
    <signal>accepted()</signal>
    <receiver>newvehicle</receiver>
    <slot>accept()</slot>
@@ -402,7 +402,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>okButton</sender>
    <signal>rejected()</signal>
    <receiver>newvehicle</receiver>
    <slot>reject()</slot>
