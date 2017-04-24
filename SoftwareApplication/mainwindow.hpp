@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include "newvehicle.hpp"
-#include "openform.hpp"
 
 namespace Ui {
 class MainWindow;
@@ -20,14 +19,12 @@ public:
 private:
     Ui::MainWindow *ui;
     newvehicle *v;
-    openform *o;
 
 private slots:
 
 
     void on_actionNew_Vehicle_triggered();
     void on_actionQuit_triggered();
-
     void on_actionOpen_2_triggered();
 };
 

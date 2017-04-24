@@ -407,78 +407,14 @@
  <resources/>
  <connections>
   <connection>
-   <sender>okButton</sender>
-   <signal>accepted()</signal>
-   <receiver>newvehicle</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>okButton</sender>
-   <signal>rejected()</signal>
-   <receiver>newvehicle</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>okButton</sender>
-   <signal>clicked(QAbstractButton*)</signal>
-   <receiver>newvehicle</receiver>
-   <slot>update()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>480</x>
-     <y>50</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>307</x>
-     <y>345</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>cancelButton</sender>
-   <signal>clicked(QAbstractButton*)</signal>
+   <signal>rejected()</signal>
    <receiver>newvehicle</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>480</x>
-     <y>100</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>307</x>
-     <y>345</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>saveButton</sender>
-   <signal>clicked(QAbstractButton*)</signal>
-   <receiver>newvehicle</receiver>
-   <slot>open()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>480</x>
-     <y>75</y>
+     <x>451</x>
+     <y>116</y>
     </hint>
     <hint type="destinationlabel">
      <x>307</x>

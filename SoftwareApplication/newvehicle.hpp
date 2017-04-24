@@ -2,7 +2,7 @@
 #define NEWVEHICLE_HPP
 
 #include <QDialog>
-
+#include <QAbstractButton>
 namespace Ui {
 class newvehicle;
 }
@@ -16,6 +16,11 @@ public:
     ~newvehicle();
 
 private slots:
+
+    void on_okButton_accepted();
+
+    void on_saveButton_accepted();
+
 
 
 private:
