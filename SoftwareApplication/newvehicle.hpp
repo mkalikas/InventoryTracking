@@ -18,8 +18,6 @@ public:
 private slots:
 
 
-    void on_okButton_clicked(QAbstractButton *button);
-
 private:
     Ui::newvehicle *ui;
 };

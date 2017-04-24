@@ -17,10 +17,10 @@
    <bool>true</bool>
   </property>
   <property name="windowTitle">
-   <string notr="true">New Vehicle Form</string>
+   <string>New Vehicle Form</string>
   </property>
   <property name="accessibleName">
-   <string>New Vehicle Form</string>
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;New  Vehicle Form&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -268,6 +268,9 @@
         </item>
         <item row="19" column="1">
          <widget class="QLineEdit" name="lineEdit_18">
+          <property name="text">
+           <string>$</string>
+          </property>
           <property name="clearButtonEnabled">
            <bool>false</bool>
           </property>
@@ -346,17 +349,23 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>411</x>
      <y>40</y>
-     <width>82</width>
-     <height>72</height>
+     <width>111</width>
+     <height>91</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
     <item>
      <widget class="QDialogButtonBox" name="okButton">
       <property name="focusPolicy">
        <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save and Exit&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -368,6 +377,12 @@
     </item>
     <item>
      <widget class="QDialogButtonBox" name="saveButton">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
       <property name="standardButtons">
        <set>QDialogButtonBox::Save</set>
       </property>
@@ -375,6 +390,12 @@
     </item>
     <item>
      <widget class="QDialogButtonBox" name="cancelButton">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cancel without saving&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
       <property name="standardButtons">
        <set>QDialogButtonBox::Cancel</set>
       </property>
@@ -414,6 +435,54 @@
     <hint type="destinationlabel">
      <x>286</x>
      <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>newvehicle</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>newvehicle</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>newvehicle</receiver>
+   <slot>open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
     </hint>
    </hints>
   </connection>

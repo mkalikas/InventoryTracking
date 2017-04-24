@@ -1,5 +1,7 @@
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
+#include <QFileDialog>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -27,6 +29,8 @@ void MainWindow::on_actionQuit_triggered()
 
 void MainWindow::on_actionOpen_2_triggered()
 {
-    o = new openform(this);
-    o->show();
+    //o = new openform(this);
+   // o->show();
+    QString file = QFileDialog::getOpenFileName (this, tr("Open File"), "C://", "All Files (*.*);;Text File (*.txt)");
+    QMessageBox::information(this, tr("File Name"), file);
 }
