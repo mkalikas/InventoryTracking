@@ -1,7 +1,7 @@
 #include "newvehicle.hpp"
 #include "ui_newvehicle.h"
 #include <QFileDialog>
-#include <QDialogButtonBox>
+
 newvehicle::newvehicle(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::newvehicle)
