@@ -37,7 +37,7 @@ public:
     QWidget *Recent;
     QHBoxLayout *horizontalLayout;
     QWidget *tab;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
     QTextBrowser *textBrowser;
@@ -92,20 +92,20 @@ public:
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         Tabs->addTab(tab, QString());
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, 20, 319, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 20, 319, 62));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget);
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
 
         horizontalLayout_2->addWidget(label);
 
-        textBrowser = new QTextBrowser(widget);
+        textBrowser = new QTextBrowser(layoutWidget);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setLineWrapMode(QTextEdit::WidgetWidth);
         textBrowser->setReadOnly(false);
@@ -114,11 +114,6 @@ public:
         horizontalLayout_2->addWidget(textBrowser);
 
         MainWindow->setCentralWidget(centralWidget);
-        label->raise();
-        textBrowser->raise();
-        label->raise();
-        textBrowser->raise();
-        textBrowser->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setEnabled(true);
@@ -141,7 +136,6 @@ public:
         mainToolBar->setOrientation(Qt::Horizontal);
         mainToolBar->setFloatable(true);
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        MainWindow->insertToolBarBreak(mainToolBar);
         toolBar = new QToolBar(MainWindow);
         toolBar->setObjectName(QStringLiteral("toolBar"));
         toolBar->setMovable(true);
@@ -167,7 +161,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Inventory Application", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Inventory Tracking", Q_NULLPTR));
 #ifndef QT_NO_ACCESSIBILITY
         MainWindow->setAccessibleName(QApplication::translate("MainWindow", "Inentory Program", Q_NULLPTR));
 #endif // QT_NO_ACCESSIBILITY

@@ -25,7 +25,7 @@
   <property name="sizeGripEnabled">
    <bool>true</bool>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -346,7 +346,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>411</x>
@@ -415,6 +415,22 @@
     <hint type="sourcelabel">
      <x>451</x>
      <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>accepted()</signal>
+   <receiver>newvehicle</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>85</y>
     </hint>
     <hint type="destinationlabel">
      <x>307</x>
