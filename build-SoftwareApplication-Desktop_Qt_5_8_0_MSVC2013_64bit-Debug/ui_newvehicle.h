@@ -31,7 +31,7 @@ QT_BEGIN_NAMESPACE
 class Ui_newvehicle
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QLabel *label;
@@ -76,7 +76,7 @@ public:
     QLineEdit *lineEdit_17;
     QLineEdit *lineEdit_15;
     QLineEdit *lineEdit_8;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_2;
     QDialogButtonBox *okButton;
     QDialogButtonBox *saveButton;
@@ -90,15 +90,15 @@ public:
         newvehicle->setFocusPolicy(Qt::TabFocus);
         newvehicle->setAcceptDrops(true);
         newvehicle->setSizeGripEnabled(true);
-        widget = new QWidget(newvehicle);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, 0, 290, 553));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(newvehicle);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 0, 290, 553));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setAlignment(Qt::AlignCenter);
         label->setTextInteractionFlags(Qt::NoTextInteraction);
@@ -109,217 +109,217 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setSizeConstraint(QLayout::SetMaximumSize);
         gridLayout->setContentsMargins(0, -1, -1, -1);
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         gridLayout->addWidget(label_2, 0, 0, 1, 1);
 
-        lineEdit = new QLineEdit(widget);
+        lineEdit = new QLineEdit(layoutWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setEnabled(true);
         lineEdit->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit, 0, 1, 1, 1);
 
-        checkBox = new QCheckBox(widget);
+        checkBox = new QCheckBox(layoutWidget);
         checkBox->setObjectName(QStringLiteral("checkBox"));
 
         gridLayout->addWidget(checkBox, 7, 1, 1, 1);
 
-        dateEdit = new QDateEdit(widget);
+        dateEdit = new QDateEdit(layoutWidget);
         dateEdit->setObjectName(QStringLiteral("dateEdit"));
 
         gridLayout->addWidget(dateEdit, 9, 1, 1, 1);
 
-        lineEdit_12 = new QLineEdit(widget);
+        lineEdit_12 = new QLineEdit(layoutWidget);
         lineEdit_12->setObjectName(QStringLiteral("lineEdit_12"));
         lineEdit_12->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_12, 12, 1, 1, 1);
 
-        dateEdit_2 = new QDateEdit(widget);
+        dateEdit_2 = new QDateEdit(layoutWidget);
         dateEdit_2->setObjectName(QStringLiteral("dateEdit_2"));
 
         gridLayout->addWidget(dateEdit_2, 13, 1, 1, 1);
 
-        label_17 = new QLabel(widget);
+        label_17 = new QLabel(layoutWidget);
         label_17->setObjectName(QStringLiteral("label_17"));
 
         gridLayout->addWidget(label_17, 14, 0, 1, 1);
 
-        lineEdit_2 = new QLineEdit(widget);
+        lineEdit_2 = new QLineEdit(layoutWidget);
         lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
         lineEdit_2->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_2, 2, 1, 1, 1);
 
-        lineEdit_4 = new QLineEdit(widget);
+        lineEdit_4 = new QLineEdit(layoutWidget);
         lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
         lineEdit_4->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_4, 3, 1, 1, 1);
 
-        lineEdit_7 = new QLineEdit(widget);
+        lineEdit_7 = new QLineEdit(layoutWidget);
         lineEdit_7->setObjectName(QStringLiteral("lineEdit_7"));
         lineEdit_7->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_7, 6, 1, 1, 1);
 
-        label_8 = new QLabel(widget);
+        label_8 = new QLabel(layoutWidget);
         label_8->setObjectName(QStringLiteral("label_8"));
 
         gridLayout->addWidget(label_8, 6, 0, 1, 1);
 
-        lineEdit_10 = new QLineEdit(widget);
+        lineEdit_10 = new QLineEdit(layoutWidget);
         lineEdit_10->setObjectName(QStringLiteral("lineEdit_10"));
         lineEdit_10->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_10, 10, 1, 1, 1);
 
-        label_7 = new QLabel(widget);
+        label_7 = new QLabel(layoutWidget);
         label_7->setObjectName(QStringLiteral("label_7"));
 
         gridLayout->addWidget(label_7, 5, 0, 1, 1);
 
-        label_14 = new QLabel(widget);
+        label_14 = new QLabel(layoutWidget);
         label_14->setObjectName(QStringLiteral("label_14"));
 
         gridLayout->addWidget(label_14, 11, 0, 1, 1);
 
-        lineEdit_6 = new QLineEdit(widget);
+        lineEdit_6 = new QLineEdit(layoutWidget);
         lineEdit_6->setObjectName(QStringLiteral("lineEdit_6"));
         lineEdit_6->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_6, 5, 1, 1, 1);
 
-        lineEdit_3 = new QLineEdit(widget);
+        lineEdit_3 = new QLineEdit(layoutWidget);
         lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
         lineEdit_3->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_3, 1, 1, 1, 1);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName(QStringLiteral("label_5"));
 
         gridLayout->addWidget(label_5, 3, 0, 1, 1);
 
-        lineEdit_11 = new QLineEdit(widget);
+        lineEdit_11 = new QLineEdit(layoutWidget);
         lineEdit_11->setObjectName(QStringLiteral("lineEdit_11"));
         lineEdit_11->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_11, 11, 1, 1, 1);
 
-        label_12 = new QLabel(widget);
+        label_12 = new QLabel(layoutWidget);
         label_12->setObjectName(QStringLiteral("label_12"));
 
         gridLayout->addWidget(label_12, 9, 0, 1, 1);
 
-        label_15 = new QLabel(widget);
+        label_15 = new QLabel(layoutWidget);
         label_15->setObjectName(QStringLiteral("label_15"));
 
         gridLayout->addWidget(label_15, 12, 0, 1, 1);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
 
         gridLayout->addWidget(label_4, 2, 0, 1, 1);
 
-        label_13 = new QLabel(widget);
+        label_13 = new QLabel(layoutWidget);
         label_13->setObjectName(QStringLiteral("label_13"));
 
         gridLayout->addWidget(label_13, 10, 0, 1, 1);
 
-        label_16 = new QLabel(widget);
+        label_16 = new QLabel(layoutWidget);
         label_16->setObjectName(QStringLiteral("label_16"));
 
         gridLayout->addWidget(label_16, 13, 0, 1, 1);
 
-        comboBox = new QComboBox(widget);
+        comboBox = new QComboBox(layoutWidget);
         comboBox->setObjectName(QStringLiteral("comboBox"));
 
         gridLayout->addWidget(comboBox, 14, 1, 1, 1);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
 
         gridLayout->addWidget(label_3, 1, 0, 1, 1);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName(QStringLiteral("label_6"));
 
         gridLayout->addWidget(label_6, 4, 0, 1, 1);
 
-        label_9 = new QLabel(widget);
+        label_9 = new QLabel(layoutWidget);
         label_9->setObjectName(QStringLiteral("label_9"));
 
         gridLayout->addWidget(label_9, 7, 0, 1, 1);
 
-        label_11 = new QLabel(widget);
+        label_11 = new QLabel(layoutWidget);
         label_11->setObjectName(QStringLiteral("label_11"));
 
         gridLayout->addWidget(label_11, 8, 0, 1, 1);
 
-        label_18 = new QLabel(widget);
+        label_18 = new QLabel(layoutWidget);
         label_18->setObjectName(QStringLiteral("label_18"));
 
         gridLayout->addWidget(label_18, 15, 0, 1, 1);
 
-        lineEdit_5 = new QLineEdit(widget);
+        lineEdit_5 = new QLineEdit(layoutWidget);
         lineEdit_5->setObjectName(QStringLiteral("lineEdit_5"));
         lineEdit_5->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_5, 4, 1, 1, 1);
 
-        label_10 = new QLabel(widget);
+        label_10 = new QLabel(layoutWidget);
         label_10->setObjectName(QStringLiteral("label_10"));
 
         gridLayout->addWidget(label_10, 19, 0, 1, 1);
 
-        lineEdit_18 = new QLineEdit(widget);
+        lineEdit_18 = new QLineEdit(layoutWidget);
         lineEdit_18->setObjectName(QStringLiteral("lineEdit_18"));
         lineEdit_18->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_18, 19, 1, 1, 1);
 
-        label_20 = new QLabel(widget);
+        label_20 = new QLabel(layoutWidget);
         label_20->setObjectName(QStringLiteral("label_20"));
 
         gridLayout->addWidget(label_20, 17, 0, 1, 1);
 
-        label_19 = new QLabel(widget);
+        label_19 = new QLabel(layoutWidget);
         label_19->setObjectName(QStringLiteral("label_19"));
 
         gridLayout->addWidget(label_19, 16, 0, 1, 1);
 
-        lineEdit_16 = new QLineEdit(widget);
+        lineEdit_16 = new QLineEdit(layoutWidget);
         lineEdit_16->setObjectName(QStringLiteral("lineEdit_16"));
         lineEdit_16->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_16, 17, 1, 1, 1);
 
-        dateEdit_3 = new QDateEdit(widget);
+        dateEdit_3 = new QDateEdit(layoutWidget);
         dateEdit_3->setObjectName(QStringLiteral("dateEdit_3"));
 
         gridLayout->addWidget(dateEdit_3, 15, 1, 1, 1);
 
-        label_21 = new QLabel(widget);
+        label_21 = new QLabel(layoutWidget);
         label_21->setObjectName(QStringLiteral("label_21"));
 
         gridLayout->addWidget(label_21, 18, 0, 1, 1);
 
-        lineEdit_17 = new QLineEdit(widget);
+        lineEdit_17 = new QLineEdit(layoutWidget);
         lineEdit_17->setObjectName(QStringLiteral("lineEdit_17"));
         lineEdit_17->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_17, 18, 1, 1, 1);
 
-        lineEdit_15 = new QLineEdit(widget);
+        lineEdit_15 = new QLineEdit(layoutWidget);
         lineEdit_15->setObjectName(QStringLiteral("lineEdit_15"));
         lineEdit_15->setClearButtonEnabled(false);
 
         gridLayout->addWidget(lineEdit_15, 16, 1, 1, 1);
 
-        lineEdit_8 = new QLineEdit(widget);
+        lineEdit_8 = new QLineEdit(layoutWidget);
         lineEdit_8->setObjectName(QStringLiteral("lineEdit_8"));
         lineEdit_8->setInputMethodHints(Qt::ImhPreferNumbers);
         lineEdit_8->setCursorPosition(1);
@@ -333,14 +333,14 @@ public:
 
         horizontalLayout->addLayout(verticalLayout);
 
-        widget1 = new QWidget(newvehicle);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(411, 40, 111, 91));
-        verticalLayout_2 = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(newvehicle);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(411, 40, 111, 91));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        okButton = new QDialogButtonBox(widget1);
+        okButton = new QDialogButtonBox(layoutWidget1);
         okButton->setObjectName(QStringLiteral("okButton"));
         okButton->setFocusPolicy(Qt::ClickFocus);
         okButton->setOrientation(Qt::Vertical);
@@ -348,14 +348,14 @@ public:
 
         verticalLayout_2->addWidget(okButton);
 
-        saveButton = new QDialogButtonBox(widget1);
+        saveButton = new QDialogButtonBox(layoutWidget1);
         saveButton->setObjectName(QStringLiteral("saveButton"));
         saveButton->setOrientation(Qt::Vertical);
         saveButton->setStandardButtons(QDialogButtonBox::Save);
 
         verticalLayout_2->addWidget(saveButton);
 
-        cancelButton = new QDialogButtonBox(widget1);
+        cancelButton = new QDialogButtonBox(layoutWidget1);
         cancelButton->setObjectName(QStringLiteral("cancelButton"));
         cancelButton->setOrientation(Qt::Vertical);
         cancelButton->setStandardButtons(QDialogButtonBox::Cancel);
@@ -365,6 +365,7 @@ public:
 
         retranslateUi(newvehicle);
         QObject::connect(cancelButton, SIGNAL(rejected()), newvehicle, SLOT(close()));
+        QObject::connect(saveButton, SIGNAL(accepted()), newvehicle, SLOT(update()));
 
         QMetaObject::connectSlotsByName(newvehicle);
     } // setupUi

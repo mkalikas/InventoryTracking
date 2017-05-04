@@ -20,7 +20,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Inventory Application</string>
+   <string>Inventory Tracking</string>
   </property>
   <property name="accessibleName">
    <string>Inentory Program</string>
@@ -93,7 +93,11 @@ background-color: rgb(200, 200, 196);</string>
       <x>30</x>
       <y>20</y>
       <width>319</width>
+<<<<<<< HEAD
       <height>72</height>
+=======
+      <height>62</height>
+>>>>>>> 949489da6c18b53037aef357c495282d3fa2c0ab
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">

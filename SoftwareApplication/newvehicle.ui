@@ -380,5 +380,42 @@
   </widget>
  </widget>
  <resources/>
+<<<<<<< HEAD
  <connections/>
+=======
+ <connections>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>rejected()</signal>
+   <receiver>newvehicle</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>accepted()</signal>
+   <receiver>newvehicle</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+>>>>>>> 949489da6c18b53037aef357c495282d3fa2c0ab
 </ui>
