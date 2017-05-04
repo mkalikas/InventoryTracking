@@ -31,7 +31,7 @@
      <x>30</x>
      <y>0</y>
      <width>290</width>
-     <height>623</height>
+     <height>643</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -62,6 +62,9 @@
          <widget class="QLabel" name="label_2">
           <property name="text">
            <string>ID</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_id</cstring>
           </property>
          </widget>
         </item>
@@ -100,6 +103,9 @@
           <property name="text">
            <string>Service Status</string>
           </property>
+          <property name="buddy">
+           <cstring>comboBox</cstring>
+          </property>
          </widget>
         </item>
         <item row="2" column="1">
@@ -128,6 +134,9 @@
           <property name="text">
            <string>Plate Number</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_platenum</cstring>
+          </property>
          </widget>
         </item>
         <item row="10" column="1">
@@ -142,12 +151,18 @@
           <property name="text">
            <string>VIN Number</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_vin</cstring>
+          </property>
          </widget>
         </item>
         <item row="11" column="0">
          <widget class="QLabel" name="label_14">
           <property name="text">
            <string>Combined Weight</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_combinedweight</cstring>
           </property>
          </widget>
         </item>
@@ -170,6 +185,9 @@
           <property name="text">
            <string>Model</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_model</cstring>
+          </property>
          </widget>
         </item>
         <item row="11" column="1">
@@ -184,6 +202,9 @@
           <property name="text">
            <string>Purchase Date</string>
           </property>
+          <property name="buddy">
+           <cstring>dateEdit</cstring>
+          </property>
          </widget>
         </item>
         <item row="12" column="0">
@@ -191,12 +212,18 @@
           <property name="text">
            <string>IFTA Number</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_ifta</cstring>
+          </property>
          </widget>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_4">
           <property name="text">
            <string>Make</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_make</cstring>
           </property>
          </widget>
         </item>
@@ -208,12 +235,18 @@
           <property name="textFormat">
            <enum>Qt::AutoText</enum>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_grossweight</cstring>
+          </property>
          </widget>
         </item>
         <item row="13" column="0">
          <widget class="QLabel" name="label_16">
           <property name="text">
            <string>Annual Inspection Date</string>
+          </property>
+          <property name="buddy">
+           <cstring>dateEdit_2</cstring>
           </property>
          </widget>
         </item>
@@ -225,12 +258,18 @@
           <property name="text">
            <string>Vehicle Number</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_vehiclenum</cstring>
+          </property>
          </widget>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_6">
           <property name="text">
            <string>Year</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_year</cstring>
           </property>
          </widget>
         </item>
@@ -239,6 +278,9 @@
           <property name="text">
            <string>Insured</string>
           </property>
+          <property name="buddy">
+           <cstring>checkBox</cstring>
+          </property>
          </widget>
         </item>
         <item row="8" column="0">
@@ -246,12 +288,18 @@
           <property name="text">
            <string>Purchase Amount</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_8</cstring>
+          </property>
          </widget>
         </item>
         <item row="15" column="0">
          <widget class="QLabel" name="label_18">
           <property name="text">
            <string>Last Service Date</string>
+          </property>
+          <property name="buddy">
+           <cstring>dateEdit_3</cstring>
           </property>
          </widget>
         </item>
@@ -266,6 +314,9 @@
          <widget class="QLabel" name="label_10">
           <property name="text">
            <string>Policy Amount</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_18</cstring>
           </property>
          </widget>
         </item>
@@ -284,12 +335,18 @@
           <property name="text">
            <string>Fuel Filter Type</string>
           </property>
+          <property name="buddy">
+           <cstring>lineEdit_fuel_filter_type</cstring>
+          </property>
          </widget>
         </item>
         <item row="16" column="0">
          <widget class="QLabel" name="label_19">
           <property name="text">
            <string>Oil Filter Type</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_oil_filter_type</cstring>
           </property>
          </widget>
         </item>
@@ -307,6 +364,9 @@
          <widget class="QLabel" name="label_21">
           <property name="text">
            <string>Air Filter Type</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_air_filter_type</cstring>
           </property>
          </widget>
         </item>
@@ -355,7 +415,7 @@
      <x>411</x>
      <y>70</y>
      <width>111</width>
-     <height>61</height>
+     <height>66</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -378,44 +438,375 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </widget>
  </widget>
+ <layoutdefault spacing="6" margin="9"/>
  <resources/>
-<<<<<<< HEAD
- <connections/>
-=======
  <connections>
   <connection>
-   <sender>cancelButton</sender>
-   <signal>rejected()</signal>
-   <receiver>newvehicle</receiver>
-   <slot>close()</slot>
+   <sender>lineEdit_platenum</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_platenum</receiver>
+   <slot>setText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>451</x>
-     <y>116</y>
+     <x>280</x>
+     <y>225</y>
     </hint>
     <hint type="destinationlabel">
-     <x>307</x>
-     <y>345</y>
+     <x>280</x>
+     <y>225</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>saveButton</sender>
-   <signal>accepted()</signal>
-   <receiver>newvehicle</receiver>
-   <slot>update()</slot>
+   <sender>lineEdit_vin</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_vin</receiver>
+   <slot>setText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>451</x>
-     <y>85</y>
+     <x>240</x>
+     <y>194</y>
     </hint>
     <hint type="destinationlabel">
-     <x>307</x>
-     <y>345</y>
+     <x>240</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_year</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_year</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_model</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>lineEdit_model</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_make</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_make</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_vehiclenum</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>lineEdit_vehiclenum</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_id</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_id</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_8</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_8</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_grossweight</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_grossweight</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit</sender>
+   <signal>timeChanged(QTime)</signal>
+   <receiver>dateEdit</receiver>
+   <slot>setTime(QTime)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_combinedweight</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_combinedweight</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_ifta</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_ifta</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit_2</sender>
+   <signal>timeChanged(QTime)</signal>
+   <receiver>dateEdit_2</receiver>
+   <slot>setTime(QTime)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_oil_filter_type</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_oil_filter_type</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>535</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_fuel_filter_type</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_fuel_filter_type</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>570</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_18</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_18</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>626</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>626</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_air_filter_type</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>lineEdit_air_filter_type</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>597</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>597</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit_3</sender>
+   <signal>timeChanged(QTime)</signal>
+   <receiver>dateEdit_3</receiver>
+   <slot>setTime(QTime)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>511</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>showMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>showMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>416</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>newvehicle</receiver>
+   <slot>open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>155</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>469</x>
+     <y>177</y>
     </hint>
    </hints>
   </connection>
  </connections>
->>>>>>> 949489da6c18b53037aef357c495282d3fa2c0ab
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
 </ui>
