@@ -30,8 +30,6 @@ void MainWindow::on_actionQuit_triggered()
 
 void MainWindow::on_actionOpen_2_triggered()
 {
-    //o = new openform(this);
-   // o->show();
     QString file = QFileDialog::getOpenFileName (this, tr("Open File"), "", "All Files (*.*);;Vehicle File (*.txt)");
 
     if(file.isEmpty ())
@@ -58,5 +56,6 @@ void MainWindow::on_actionOpen_2_triggered()
         }
     }
 }
+
 
 
