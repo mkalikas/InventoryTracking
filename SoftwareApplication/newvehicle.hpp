@@ -2,7 +2,8 @@
 #define NEWVEHICLE_HPP
 
 #include <QDialog>
-#include <QAbstractButton>
+#include<QMap>
+
 namespace Ui {
 class newvehicle;
 }
@@ -13,18 +14,19 @@ class newvehicle : public QDialog
 
 public:
     explicit newvehicle(QWidget *parent = 0);
+    void load_data();
     ~newvehicle();
 
 private slots:
 
-    void on_okButton_accepted();
+    void on_pushButton_save_clicked();
 
-    void on_saveButton_accepted();
-
+    void on_pushButton_cancel_clicked();
 
 
 private:
     Ui::newvehicle *ui;
+    QMap<QString, QString> files;
 };
 
 #endif // NEWVEHICLE_HPP

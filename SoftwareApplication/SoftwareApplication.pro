@@ -25,13 +25,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    newvehicle.cpp \
-    openform.cpp
+    newvehicle.cpp
 
 HEADERS  += mainwindow.hpp \
-    newvehicle.hpp \
-    openform.hpp
+    newvehicle.hpp
 
 FORMS    += mainwindow.ui \
-    newvehicle.ui \
-    openform.ui
+    newvehicle.ui

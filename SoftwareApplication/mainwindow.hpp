@@ -2,6 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <QMainWindow>
+#include<QMap>
 #include "newvehicle.hpp"
 
 namespace Ui {
@@ -19,7 +20,7 @@ public:
 private:
     Ui::MainWindow *ui;
     newvehicle *v;
-
+    QMap<QString, QString> files;
 private slots:
 
 

@@ -37,6 +37,9 @@
   <property name="dockOptions">
    <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::VerticalTabs</set>
   </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -72,7 +75,7 @@ background-color: rgb(200, 200, 196);</string>
     <property name="tabBarAutoHide">
      <bool>true</bool>
     </property>
-    <widget class="QWidget" name="Recent" native="true">
+    <widget class="QWidget" name="Recent">
      <attribute name="title">
       <string>Recent</string>
      </attribute>
@@ -84,13 +87,13 @@ background-color: rgb(200, 200, 196);</string>
      </attribute>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>20</y>
       <width>319</width>
-      <height>31</height>
+      <height>72</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -116,13 +119,6 @@ background-color: rgb(200, 200, 196);</string>
      </item>
     </layout>
    </widget>
-   <zorder>toolButton</zorder>
-   <zorder>toolButton_2</zorder>
-   <zorder>label</zorder>
-   <zorder>textBrowser</zorder>
-   <zorder>label</zorder>
-   <zorder>textBrowser</zorder>
-   <zorder>textBrowser</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="enabled">
@@ -133,7 +129,7 @@ background-color: rgb(200, 200, 196);</string>
      <x>0</x>
      <y>0</y>
      <width>472</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -151,13 +147,16 @@ border-color: rgb(0, 0, 0);
 background-color: rgb(199, 200, 193);</string>
    </property>
    <property name="nativeMenuBar">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <widget class="QMenu" name="File">
     <property name="title">
      <string>File</string>
     </property>
     <property name="separatorsCollapsible">
+     <bool>true</bool>
+    </property>
+    <property name="toolTipsVisible">
      <bool>true</bool>
     </property>
     <addaction name="actionNew_Vehicle"/>
@@ -189,7 +188,7 @@ background-color: rgb(199, 200, 193);</string>
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <widget class="QToolBar" name="toolBar">
@@ -219,6 +218,9 @@ background-color: rgb(199, 200, 193);</string>
   <action name="actionNew_Vehicle">
    <property name="text">
     <string>New Vehicle</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionQuit">

@@ -1,5 +1,6 @@
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
+#include "newvehicle.hpp"
 #include <QFileDialog>
 #include <QMessageBox>
 
@@ -31,6 +32,31 @@ void MainWindow::on_actionOpen_2_triggered()
 {
     //o = new openform(this);
    // o->show();
-    QString file = QFileDialog::getOpenFileName (this, tr("Open File"), "C://", "All Files (*.*);;Text File (*.txt)");
-    QMessageBox::information(this, tr("File Name"), file);
+    QString file = QFileDialog::getOpenFileName (this, tr("Open File"), "", "All Files (*.*);;Vehicle File (*.txt)");
+
+    if(file.isEmpty ())
+        return;
+    else {
+        QFile f(file);
+
+        if(!f.open (QIODevice::ReadOnly)) {
+            QMessageBox::information (this, tr("Cannot Open File"), f.errorString());
+            return;
+        }
+        QDataStream in(&f);
+        in.setVersion (QDataStream::Qt_4_8);
+        files.empty ();
+        in >> files;
+
+        if(files.isEmpty ()) {
+            QMessageBox::information (this, tr("No Information in File"), tr("The file you want to open does not have any information"));
+        }
+        else {
+           // QMap<QString, QString>::iterator it = files.begin ();
+
+           return;
+        }
+    }
 }
+
+
