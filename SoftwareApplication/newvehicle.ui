@@ -31,7 +31,7 @@
   <property name="sizeGripEnabled">
    <bool>true</bool>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>22</x>
@@ -621,7 +621,7 @@ color: rgb(0, 0, 0);</string>
        </size>
       </property>
       <property name="text">
-       <string>CheckBox</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -768,7 +768,7 @@ color: rgb(0, 0, 0);</string>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>990</x>
@@ -802,11 +802,8 @@ color: rgb(0, 0, 0);</string>
    </layout>
   </widget>
   <zorder>layoutWidget</zorder>
+  <zorder></zorder>
   <zorder>layoutWidget</zorder>
-  <zorder>pushButton</zorder>
-  <zorder></zorder>
-  <zorder></zorder>
-  <zorder>pushButton_cancel</zorder>
  </widget>
  <layoutdefault spacing="6" margin="9"/>
  <resources/>

@@ -2,7 +2,7 @@
 #define NEWVEHICLE_HPP
 
 #include <QDialog>
-#include<QMap>
+#include <QMap>
 
 namespace Ui {
 class newvehicle;

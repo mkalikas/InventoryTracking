@@ -2,7 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <QMainWindow>
-#include<QMap>
+#include <QMap>
 #include "newvehicle.hpp"
 
 namespace Ui {
